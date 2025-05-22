@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import React from "react";
 
 const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
   return (
@@ -6,7 +7,7 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
       id={id}
       className={clsx(
         "group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black",
-        containerClass
+        containerClass,
       )}
     >
       {leftIcon}
